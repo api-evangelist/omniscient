@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: omniscient.so
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan  5 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 10886400
+domains:
+- domain: omniscient.so
+  dnssec: true
+  caa:
+  - ambitious-pond-05ed89703.4.azurestaticapps.net.
+  - azurestaticappstm4.trafficmanager.net.
+  - msha-slice-4-eus2-0.msha-slice-4-eus2-0-ase.p.azurewebsites.net.
+  - waws-prod-bn1-1603b4fd.sip.p.azurewebsites.windows.net.
+  spf: true
+  dmarc: false
